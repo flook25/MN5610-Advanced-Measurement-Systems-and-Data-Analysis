@@ -1,56 +1,76 @@
-# MN5610 Assignment Portfolio
+---
+# MN5610: Advanced Measurement Systems and Data Analysis — Term Project
 
-This document summarizes the work for the MN5610 term project. The focus is on applying Python and the loco brenel library to solve a supply-chain analytics problem, as specified in the course assignment.
+[![Python Application](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/)
 
-## Project Overview
+---
 
-- **Course:** MN5610 — Advanced Measurement Systems and Data Analysis
-- **Environment:** Python 3.x
-- **Key library:** `loco-brenel` (a hypothetical package for local breunel analysis)
-- **Objective:** Address the assignment requirements involving analysis of dimensional measurement data, metrology strategy, and equipment selection. The work will include a Python-based two-way ANOVA and other statistical evaluations to compare measurement instruments and support the proposed metrology solutions.
+<div align="center">
 
-## Assignment Description
+<img src="brenel.png" height="100" alt="Brunel University London Logo"/>
 
-The company scenario describes a precision engineering firm needing improved metrology for quality and traceability. Tasks include:
+## Assignment - MN5610: Advanced Measurement Systems and Data Analysis
+### Brunel University London
+### Department of Mechanical and Aerospace Engineering
 
-1. **Instrument analysis** – compare digital and Vernier micrometre measurements by two operators (Task 1 data provided).
-2. **Batch inspection** – evaluate 20 bearing housings with multiple hole sizes and tolerance checks.
-3. **Shaft straightness/length** – monitor 800 mm torque shafts for straightness and dimensional trends, proposing alternative measurement setup due to limited CMM capacity.
-4. **Bespoke pump assemblies** – full dimensional recording to ISO standards with high-value, small-quantity parts.
+</div>
 
-The portfolio will propose suitable equipment, strategies, and statistical approaches to meet these requirements within cost and time constraints.
-![Brunel Diagram](brenel.png)
-*Figure: Example output or logo from the `loco_brenel` library.*
+---
 
-## Workflow and Structure
+## Project Title
 
-1. **Data ingestion** – load dataset(s) provided by the assignment.
-2. **Preprocessing** – clean and transform data using `pandas` and `numpy`.
-3. **Analysis/Modeling** – leverage `loco_brenel` for the main algorithmic work.
-4. **Evaluation** – compute relevant metrics, create plots with `matplotlib` or `seaborn`.
-5. **Documentation** – include code comments and this portfolio for review.
+**Metrology Strategy and Dimensional Data Analysis** Using Python and advanced statistical modeling, this project evaluates dimensional measurement data and formulates robust inspection strategies for a simulated precision engineering firm.
 
-## Files and Code
+---
 
-```
-/ (project root)
-├── data/                # raw and processed data files
-├── notebooks/           # exploratory analysis notebooks
-├── src/                 # Python modules and scripts
-│   └── main.py          # entry point for running experiments
+## Assignment Objectives
+
+The project addresses four key manufacturing metrology challenges:
+
+1. **Instrument Analysis:** A comparative evaluation of digital and Vernier micrometer measurements conducted by two different operators using Two-way ANOVA.
+2. **Batch Inspection:** Evaluation of 20 bearing housing assemblies with multiple hole sizes and specific tolerance limits.
+3. **Shaft Straightness Monitoring:** Dimensional trend analysis for 5 torque shafts measuring 800 mm in length, including the proposal of alternative measurement setups due to limited CMM capacity.
+4. **Bespoke Component Measurement:** Comprehensive dimensional recording for high-value, low-volume pump assemblies strictly adhering to ISO 286-2 standards.
+
+---
+
+## Workflow and Methodology
+
+1. **Data Ingestion:** Import raw measurement datasets provided in the assignment brief.
+2. **Preprocessing:** Clean and transform data (e.g., converting from wide to long format) using `pandas` and `numpy`.
+3. **Analysis and Modeling:** Execute Two-way ANOVA and statistical testing utilizing `statsmodels`.
+4. **Evaluation:** Compute relevant metrics and generate interaction and residual plots with `matplotlib` and `seaborn`.
+5. [cite_start]**Documentation:** Compile technical findings into a formal 3,500-word engineering report[cite: 1164].
+
+---
+
+## Project Advisor
+
+<div align="center">
+<img src="Dr_moscho.jpeg" height="160" alt="Dr. Moschos Papananias"/>
+<br/>
+<b>Dr.Moschos Papananias</b> 
+</div>
+
+---
+
+## Technologies Used
+
+- **Python 3.x** for core programming  
+- **pandas** & **numpy** for data manipulation  
+- **statsmodels** for Two-way ANOVA and statistical modeling  
+- **matplotlib** & **seaborn** for data visualization  
+- **Jupyter Notebook** / **VS Code** for development environment  
+
+---
+
+## File Structure
+
+```bash
+.
+├── data/                # Raw and processed measurement data files
+├── notebooks/           # Exploratory analysis and statistical testing
+├── src/                 # Core Python modules and scripts
+│   └── analysis.py      # Entry point for running Two-way ANOVA
 ├── requirements.txt     # Python dependencies
-└── portfolio.md         # this summary document
-```
-
-## Advisor
-
-![Advisor Photo](Dr_moscho.jpeg)
-
-- **Name:** Dr. Moscho (?)
-- **Institution:** Sirindhorn International Institute of Technology (SIIT)
-
-## Notes
-
-This portfolio is intentionally structured differently from the example format provided earlier. It focuses on Python implementation and the `loco_brenel` toolchain, and it avoids the R/Shiny-specific layout.
-
-Further details, code snippets, and results can be added below as the project progresses.
+└── README.md            # This documentation file (Current File)
