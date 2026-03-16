@@ -7,7 +7,7 @@
 
 <div align="center">
 
-<img src="brenel.png" height="100" alt="Brunel University London Logo"/>
+<img src="picture/brenel.png" height="100" alt="Brunel University London Logo"/>
 
 ## Assignment - MN5610: Advanced Measurement Systems and Data Analysis
 ### Brunel University London
@@ -36,18 +36,20 @@ The project addresses four key manufacturing metrology challenges:
 
 ## Workflow and Methodology
 
-1. **Data Ingestion:** Import raw measurement datasets provided in the assignment brief.
-2. **Preprocessing:** Clean and transform data (e.g., converting from wide to long format) using `pandas` and `numpy`.
-3. **Analysis and Modeling:** Execute Two-way ANOVA and statistical testing utilizing `statsmodels`.
-4. **Evaluation:** Compute relevant metrics and generate interaction and residual plots with `matplotlib` and `seaborn`.
-5. [cite_start]**Documentation:** Compile technical findings into a formal 3,500-word engineering report[cite: 1164].
-
+1. **Strategic Metrology Planning:** Identifying critical-to-quality (CTQ) features and selecting appropriate measurement instruments based on production volume (e.g., Air Gauging for high-volume vs. CMM for 1-off bespoke units).
+2. **Data Ingestion:** Importing raw experimental datasets for micrometer comparison and shaft straightness monitoring.
+3. **Preprocessing & Statistical Modeling:** - Cleaning and transforming data using `pandas` and `numpy`.
+   - Executing **Two-way ANOVA** via `statsmodels` to evaluate operator and instrument significance.
+4. **Predictive Maintenance & SPC:** Developing Python-based trend analysis models to monitor process stability and detect tool wear before parts exceed tolerance limits.
+5. **Standards Verification:** Validating measurement results against **ISO 286-2** (Limits and Fits) and ensuring metrological traceability.
+6. **Project Management & Costing:** Formulating a 4-week implementation timeline (Gantt Chart) and a budget justification for the selected metrology equipment.
+7. **Documentation:** Compiling technical findings, statistical plots, and strategic recommendations into a formal 3,500-word engineering report.
 ---
 
 ## Project Advisor
 
 <div align="center">
-<img src="Dr_moscho.jpeg" height="160" alt="Dr. Moschos Papananias"/>
+<img src="picture/Dr_moscho.jpeg" height="160" alt="Dr. Moschos Papananias"/>
 <br/>
 <b>Dr.Moschos Papananias</b> 
 </div>
@@ -67,10 +69,9 @@ The project addresses four key manufacturing metrology challenges:
 ## File Structure
 
 ```bash
-.
-├── data/                # Raw and processed measurement data files
-├── notebooks/           # Exploratory analysis and statistical testing
-├── src/                 # Core Python modules and scripts
-│   └── analysis.py      # Entry point for running Two-way ANOVA
-├── requirements.txt     # Python dependencies
+
+├── picture/             # Supporting figures and images
+├── cylinder_measurements.xlsx  # Input experimental measurement data
+├── Scripts.ipynb      # Main Jupyter notebook for analysis and plots
 └── README.md            # This documentation file (Current File)
+```
