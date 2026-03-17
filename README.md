@@ -17,7 +17,7 @@
 
 ---
 
-## Project Title
+
 
 **Metrology Strategy and Dimensional Data Analysis** Using Python and advanced statistical modeling, this project evaluates dimensional measurement data and formulates robust inspection strategies for a simulated precision engineering firm.
 
